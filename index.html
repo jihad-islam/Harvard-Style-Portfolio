@@ -17,18 +17,75 @@
     />
   </head>
   <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-links">
+          <a href="#"><i class="fas fa-envelope"></i> jihadislam@gmail.com</a>
+          <a href="#"><i class="fas fa-phone"></i> 01518938567</a>
+        </div>
+        <div class="top-social">
+          <a href="https://github.com/yourusername"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/yourusername"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
     <header>
       <div class="container">
-        <h1>Jihad Islam</h1>
-        <p>Computer Science & Engineering | Frontend Developer</p>
-        <p>
-          <i class="fas fa-envelope"></i> jihadislam@gmail.com |
-          <i class="fas fa-phone"></i> 01518938567
-        </p>
+        <div class="header-content">
+          <div class="logo">
+            <h1>Jihad Islam</h1>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#interests">Interests</a></li>
+              <li class="highlighted"><a href="#goals">Goals</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
-    <nav>
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="profile-image-container">
+            <img
+              src="assets/jihad.jpg"
+              alt="Jihad Islam"
+              class="profile-image"
+            />
+          </div>
+          <div class="hero-text">
+            <h1>Computer Science & Engineering</h1>
+            <h2>Django & React Developer</h2>
+            <p class="hero-description">
+              Building innovative solutions through code and creativity
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav">
       <div class="container">
         <ul>
           <li>
@@ -55,6 +112,29 @@
 
     <main>
       <div class="container">
+        <div class="features-row">
+          <div class="feature-box">
+            <i class="fas fa-code fa-2x"></i>
+            <h3>Full-Stack Development</h3>
+            <p>Proficient in both frontend and backend technologies</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-graduation-cap fa-2x"></i>
+            <h3>Academic Research</h3>
+            <p>Active researcher in machine learning techniques</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-project-diagram fa-2x"></i>
+            <h3>Project-Based Learning</h3>
+            <p>Learning through building real-world applications</p>
+          </div>
+        </div>
+
+        <div class="harvard-quote">
+          "The best students are those who pursue knowledge with passion and
+          apply it with purpose."
+        </div>
+
         <section id="about">
           <h2>About Me</h2>
           <p>
@@ -149,12 +229,23 @@
             </div>
 
             <div class="project-card">
-              <h3>Foster Home Management System</h3>
+              <h3>Student Biodata Form</h3>
               <p>
-                A platform for managing animal foster homes and adoption
-                processes.
+                A comprehensive digital form system for collecting and managing
+                student biographical data. Features input validation and
+                database integration.
               </p>
-              <p><strong>Tech Stack:</strong> Django, JavaScript</p>
+              <p>
+                <strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP, MySQL
+              </p>
+              <p>
+                <a
+                  href="https://github.com/jihad-islam/Student-BioData-Form.git"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </p>
             </div>
 
             <div class="project-card">
@@ -172,31 +263,41 @@
           </div>
         </section>
 
-        <section id="research">
-          <h2>Research</h2>
-          <h3>
-            Enhancing Few-Shot Learning with Self-Supervised Contrastive
-            Learning
-          </h3>
-          <p>
-            My final year thesis research focuses on improving few-shot learning
-            techniques through self-supervised contrastive learning approaches.
-            The goal is to develop methods that can learn from limited labeled
-            data, which is especially valuable in domains where labeled data is
-            scarce or expensive to obtain.
-          </p>
-          <p>
-            <strong>Status:</strong> In progress, aiming to publish in a Q1
-            journal by mid-2025
-          </p>
-          <p>
-            <strong>Research Interests:</strong> Machine Learning, Natural
-            Language Processing, Few-Shot Learning
-          </p>
+        <section id="research" class="highlight-section">
+          <div class="section-header">
+            <h2>Research</h2>
+            <p class="section-subtitle">
+              Advancing Machine Learning Techniques
+            </p>
+          </div>
+          <div class="research-wrapper">
+            <h3>
+              Enhancing Few-Shot Learning with Self-Supervised Contrastive
+              Learning
+            </h3>
+            <p>
+              My final year thesis research focuses on improving few-shot
+              learning techniques through self-supervised contrastive learning
+              approaches. The goal is to develop methods that can learn from
+              limited labeled data, which is especially valuable in domains
+              where labeled data is scarce or expensive to obtain.
+            </p>
+            <p>
+              <strong>Status:</strong> In progress, aiming to publish in a Q1
+              journal by mid-2025
+            </p>
+            <p>
+              <strong>Research Interests:</strong> Machine Learning, Natural
+              Language Processing, Few-Shot Learning
+            </p>
+          </div>
         </section>
 
         <section id="goals">
-          <h2>2025 Goals</h2>
+          <div class="section-header">
+            <h2>Goals</h2>
+            <p class="section-subtitle">Roadmap to Professional Success</p>
+          </div>
           <div class="goals-container">
             <div class="goal-item">
               <h3>Technical Growth</h3>
@@ -235,20 +336,74 @@
             <li>Contributing to open source projects</li>
           </ul>
         </section>
+
+        <section id="contact" class="highlight-section">
+          <div class="section-header">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Ready to collaborate? Let's connect!</p>
+          </div>
+          <div class="contact-info">
+            <div class="contact-method">
+              <i class="fas fa-envelope fa-2x"></i>
+              <h3>Email</h3>
+              <p>jihadislam@gmail.com</p>
+            </div>
+            <div class="contact-method">
+              <i class="fas fa-phone fa-2x"></i>
+              <h3>Phone</h3>
+              <p>01518938567</p>
+            </div>
+            <div class="contact-method">
+              <i class="fab fa-github fa-2x"></i>
+              <h3>GitHub</h3>
+              <p>
+                <a href="https://github.com/yourusername"
+                  >github.com/yourusername</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 
     <footer>
-      <div class="container">
-        <p>&copy; 2025 Jihad Islam. All rights reserved.</p>
-        <p>
-          <a href="https://github.com/yourusername"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://linkedin.com/in/yourusername"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </p>
+      <div class="footer-links">
+        <div class="container">
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#research">Research</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://github.com/yourusername">GitHub</a></li>
+              <li>
+                <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+              </li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="#">Resume</a></li>
+              <li><a href="#">Publications</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 Jihad Islam. All rights reserved.</p>
+          <p>Daffodil International University, Bangladesh</p>
+        </div>
       </div>
     </footer>
   </body>
